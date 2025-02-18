@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="hatchback">
+    <!-- Change to false so the model is dynamic -->
+    <static>false</static>
+    
+    <link name="link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://hatchback/meshes/hatchback.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://hatchback/meshes/hatchback.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    
+    <!-- Add a controller plugin that subscribes to Twist commands -->
+    <plugin name="velocity_controller" filename="libignition-gazebo-velocity-control-system.so">
+      <ros>
+        <!-- This sets the ROS namespace for the plugin -->
+        <namespace>/model/hatchback</namespace>
+        <!-- Remap the plugin's command topic to "cmd_vel" (so the full topic is /model/hatchback/cmd_vel) -->
+        <remapping>cmd_vel:=cmd_vel</remapping>
+      </ros>
+      <!-- Specify the body (link) the plugin will control -->
+      <body_name>link</body_name>
+    </plugin>
+    
+  </model>
+</sdf>

@@ -1,0 +1,4 @@
+Invoking command in '/home/fishros/AVAudi/audi_ws/build/open_loop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --build /home/fishros/AVAudi/audi_ws/build/open_loop -- -j16 -l16
+Invoked command in '/home/fishros/AVAudi/audi_ws/build/open_loop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --build /home/fishros/AVAudi/audi_ws/build/open_loop -- -j16 -l16
+Invoking command in '/home/fishros/AVAudi/audi_ws/build/open_loop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --install /home/fishros/AVAudi/audi_ws/build/open_loop
+Invoked command in '/home/fishros/AVAudi/audi_ws/build/open_loop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --install /home/fishros/AVAudi/audi_ws/build/open_loop

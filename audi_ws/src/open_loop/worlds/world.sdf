@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Include your Hatchback model -->
+    <include>
+      <uri>model://hatchback</uri>
+      <!-- Optionally specify an initial pose -->
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <!-- Other world settings -->
+  </world>
+</sdf>
