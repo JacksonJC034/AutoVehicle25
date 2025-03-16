@@ -1,0 +1,13 @@
+M = 750.0 # mass of the car (kg)
+g = 9.81
+FT_MAX = 16.0 # max traction acceleration (m/s^2)
+FB_MAX = 16.0 # max braking acceleration (m/s^2)
+FN_MAX = 30.0 # max cornering acceleration (m/s^2)
+L = 3.0   # vehicle wheel base length 
+DIST_AXLE_FRONT = 1.5   # distance from front axle to center of mass
+DIST_AXLE_REAR= 1.5   # distance from rear axle to center of mass
+AXLE_NORMAL_LOAD_FRONT= DIST_AXLE_REAR/L * M * g # normal load on front axle
+AXLE_NORMAL_LOAD_REAR = DIST_AXLE_FRONT/L * M * g # normal load on rear axle
+LATERAL_AXLE_STIFFNESS_FRONT = 20000.0 # lateral stiffness of front axle (N/m)
+LATERAL_AXLE_STIFFNESS_REAR = 20000.0 # lateral stiffness of rear axle (N/m)
+TRACK_WIDTH = 12 # width of the track (m)
