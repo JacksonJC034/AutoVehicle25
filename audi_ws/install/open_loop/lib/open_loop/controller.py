@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 import math
 from geometry_msgs.msg import Twist
-from ignition.msgs import LinkData
+from gazebo_msgs.msg import LinkStates
 
 class BicycleController(Node):
     def __init__(self):

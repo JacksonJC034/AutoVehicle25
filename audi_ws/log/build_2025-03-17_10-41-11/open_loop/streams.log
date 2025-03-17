@@ -1,0 +1,41 @@
+[0.006s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/build/open_loop': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) PS1=(AV) %(?, ,%{$fg[red]%}FAIL%{$reset_color%}
+)
+%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
+➜ /usr/bin/cmake /home/fishros/AutoVehicle25/audi_ws/src/open_loop -DCMAKE_INSTALL_PREFIX=/home/fishros/AutoVehicle25/audi_ws/install/open_loop
+[0.137s] -- The C compiler identification is GNU 11.4.0
+[0.239s] -- The CXX compiler identification is GNU 11.4.0
+[0.247s] -- Detecting C compiler ABI info
+[0.286s] -- Detecting C compiler ABI info - done
+[0.290s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.290s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.293s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.343s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.344s] -- Detecting CXX compile features
+[0.344s] -- Detecting CXX compile features - done
+[0.346s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.681s] -- Found Python3: /home/fishros/anaconda3/envs/AV/bin/python3 (found version "3.10.16") found components: Interpreter 
+[0.756s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.769s] Traceback (most recent call last):
+[0.769s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.769s]     from catkin_pkg.package import parse_package_string
+[0.769s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.771s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.771s]   execute_process(/home/fishros/anaconda3/envs/AV/bin/python3
+[0.771s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.771s]   /home/fishros/AutoVehicle25/audi_ws/src/open_loop/package.xml
+[0.771s]   /home/fishros/AutoVehicle25/audi_ws/build/open_loop/ament_cmake_core/package.cmake)
+[0.771s]   returned error code 1
+[0.771s] Call Stack (most recent call first):
+[0.771s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.771s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.771s]   CMakeLists.txt:26 (ament_package)
+[0.771s] 
+[0.771s] [0m
+[0.771s] -- Configuring incomplete, errors occurred!
+[0.771s] See also "/home/fishros/AutoVehicle25/audi_ws/build/open_loop/CMakeFiles/CMakeOutput.log".
+[0.773s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/build/open_loop' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) PS1=(AV) %(?, ,%{$fg[red]%}FAIL%{$reset_color%}
+)
+%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
+➜ /usr/bin/cmake /home/fishros/AutoVehicle25/audi_ws/src/open_loop -DCMAKE_INSTALL_PREFIX=/home/fishros/AutoVehicle25/audi_ws/install/open_loop
