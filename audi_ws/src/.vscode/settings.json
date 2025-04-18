@@ -1,0 +1,36 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dliujm/ros2_ws/install/voice_command/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/semantic_mapping/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/semantic_labeling_demo/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/racing_controller/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/lucy_hardware/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/image_saver/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages",
+        "/home/dliujm/ros2_ws/src/install/semantic_mapping/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/semantic_labeling_demo/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/lucy_hardware/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/image_saver/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dliujm/ros2_ws/install/voice_command/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/semantic_mapping/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/semantic_labeling_demo/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/racing_controller/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/lucy_hardware/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/image_saver/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/install/custom_msg/local/lib/python3.10/dist-packages",
+        "/home/dliujm/ros2_ws/src/install/semantic_mapping/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/semantic_labeling_demo/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/lucy_hardware/lib/python3.10/site-packages",
+        "/home/dliujm/ros2_ws/src/install/image_saver/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

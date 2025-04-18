@@ -5,11 +5,11 @@ from math_stuff import *
 
 MAX_STEERING_ANGLE = np.pi/8
 
-def feedforward (R,U_x):
+def feedforward (R,U_x,slip_front,slip_rear):
     u = U_x
     r = R
     K_ug = AXLE_NORMAL_LOAD_FRONT/LATERAL_AXLE_STIFFNESS_FRONT - AXLE_NORMAL_LOAD_REAR/LATERAL_AXLE_STIFFNESS_REAR # understeer gradient
-    delta_feedforward = (L + K_ug * u**2/g)*1/r
+    delta_feedforward = (L + K_ug * u**2/g)*1/r - slip_front + slip_rear
     return delta_feedforward
 
 
@@ -40,8 +40,8 @@ def lane_keep(vehicle, desired_location, x_spline, y_spline, s_lim):
 def yaw_damping():
     return 0
 
-def lateral_controller(R, U_x, vehicle, desired_location,x_spline,y_spline, s_lim):
-    delta = K_ff * feedforward(R, U_x)
+def lateral_controller(R, U_x, vehicle, desired_location,x_spline,y_spline, s_lim, slip_front = 0, slip_rear = 0):
+    delta = K_ff * feedforward(R, U_x,slip_front,slip_rear)
     delta_lk,e = lane_keep(vehicle, desired_location,x_spline,y_spline , s_lim )
     delta = np.clip(delta + delta_lk, -MAX_STEERING_ANGLE, MAX_STEERING_ANGLE)
     return delta, e

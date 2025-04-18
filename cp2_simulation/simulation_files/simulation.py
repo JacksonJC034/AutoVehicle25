@@ -17,6 +17,15 @@ class Vehicle:
         self.x = x
         self.y = y
         self.theta = theta
+        # vehicle front tire slip angle
+        self.alpha_f = 0
+        
+        # vehicle rear tire slip 
+        self.alpha_r = 0
+        
+        
+        
+        
         self.v = v
         self.s = 1e-5
 
@@ -34,7 +43,8 @@ class Vehicle:
         self.theta += (self.v / L) * np.tan(steering) * dt
 
         # Update velocity
-        self.v = throttle 
+        self.v = self.v + throttle/M * dt
+        
 
 
 
@@ -45,10 +55,13 @@ center_line, inner_boundary, outer_boundary, waypoints = generate_race_track(
         track_width= TRACK_WIDTH
     )
 
+
+
 # start the matlab engine
 eng = matlab.engine.start_matlab()
 eng.eval("set(0, 'DefaultFigureVisible', 'off');", nargout=0) # supress figures 
 eng.addpath('../MW208_Raceline_Optimization')
+
 
 
 # file name of csv, name of track, call minimum curvature path generation function
@@ -57,17 +70,23 @@ track_name = 'my_track'
 (MCP_track, original_track) = eng.minCurvaturePathGenFunction (file_name, track_name, nargout = 2)
 (vel_prof, len) = eng.velProfCalcFunction (MCP_track, track_name, M, FT_MAX, FB_MAX, FN_MAX, original_track, nargout = 2)
 
+
+
 # convert to numpy array 
 MCP_track = np.array(MCP_track)
 vel_prof = np.array(vel_prof)
 s = np.array (len)
 
+
+
+# distance traversed is s
 s = [item[0] for item in s]
 
 
 
 # spline velocity profile
 U_x = spline_velocity(s, vel_prof)
+A_x = U_x.derivative(1)
 
 # spline track  
 x_cont = spi.UnivariateSpline (s, MCP_track[:,0], s = 0)
@@ -87,16 +106,24 @@ steering_history = []
 lk_history = []
 
 
+
+
+
+
 iter = 0 
 while vehicle.s < s[-1]:
-     steering_input,e  = lateral_controller(roc (vehicle.s), U_x(vehicle.s), vehicle, (x_cont(vehicle.s), y_cont(vehicle.s)), x_cont, y_cont, (vehicle.s-100,vehicle.s+100))
+    vehicle.alpha_f = (AXLE_NORMAL_LOAD_FRONT/g * U_x(vehicle.s)**2/roc(vehicle.s))/LATERAL_AXLE_STIFFNESS_FRONT
+    vehicle.alpha_r = (AXLE_NORMAL_LOAD_REAR/g * U_x(vehicle.s)**2/roc(vehicle.s))/LATERAL_AXLE_STIFFNESS_REAR
+    steering_input,e  = lateral_controller(roc (vehicle.s), U_x(vehicle.s), vehicle, (x_cont(vehicle.s), y_cont(vehicle.s)), x_cont, y_cont, (vehicle.s-100,vehicle.s+100), slip_front = vehicle.alpha_f, slip_rear = vehicle.alpha_f)
 #      print ("steering" , steering_input)
-     throttle_input = U_x(vehicle.s) #longtituinal_controller (U_x(vehicle.s), vehicle.s, roc(vehicle.s))
-     vehicle.update (throttle_input, steering_input)
-     x_history.append(vehicle.x)
-     y_history.append(vehicle.y)
-     e_history.append(e)
-     steering_history.append(float(steering_input))
+    throttle_input = longtituinal_controller (M,A_x(vehicle.s)) #longtituinal_controller (U_x(vehicle.s), vehicle.s, roc(vehicle.s))
+    
+    vehicle.update (throttle_input, steering_input)
+    x_history.append(vehicle.x)
+    y_history.append(vehicle.y)
+    e_history.append(e)
+    steering_history.append(float(steering_input))
+
 
 
 

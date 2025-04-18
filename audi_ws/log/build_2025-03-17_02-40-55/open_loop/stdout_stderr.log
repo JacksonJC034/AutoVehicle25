@@ -1,4 +1,4 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/fishros/AutoVehicle25/audi_ws/build/open_loop/CMakeCache.txt is different than the directory /home/fishros/AVAudi/audi_ws/build/open_loop where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0mCMake Error: The source directory "/home/fishros/AVAudi/audi_ws/src/open_loop" does not exist.
+[0mCMake Error: The current CMakeCache.txt directory /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop/CMakeCache.txt is different than the directory /home/dliujm/um_files/rob_498_av/AVAudi/audi_ws/build/open_loop where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/dliujm/um_files/rob_498_av/AVAudi/audi_ws/src/open_loop" does not exist.
 Specify --help for usage, or press the help button on the CMake GUI.[0m
 gmake: *** [Makefile:226: cmake_check_build_system] Error 1

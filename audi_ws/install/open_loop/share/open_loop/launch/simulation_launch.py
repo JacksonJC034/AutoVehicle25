@@ -6,7 +6,7 @@ def generate_launch_description():
     return LaunchDescription([
         # Launch Ignition Gazebo
         ExecuteProcess(
-            cmd=['ign', 'gazebo', '-v', '4', '-r', '/home/fishros/AutoVehicle25/audi_ws/src/open_loop/worlds/world.sdf'],
+            cmd=['ign', 'gazebo', '-v', '4', '-r', '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/open_loop/worlds/world.sdf'],
             output='screen'
         ),
         

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="oval_racetrack_world">
+    <scene>
+      <grid>true</grid>
+    </scene>
+    <!-- Sunlight -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri> file:///home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/vehicle_desc/models/lucy </uri>
+      <pose> 100 100 40 0 0 0 </pose>
+    </include>
+
+    <include>
+        <uri> file:///home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/vehicle_desc/models/sonoma_raceway </uri>
+    </include>
+  </world>
+</sdf>
