@@ -21,6 +21,14 @@ def generate_race_track(
         Tuple of (center_line, inner_boundary, outer_boundary, waypoints)
     """
     waypoints = [
+        # (0,0),
+        # (200,0),
+        # (400,0),
+        # (600,0),
+        # (800,0),
+        # (800,200),
+        # (0,400),
+        # (0,0)
         (0, 0),       # 1: Start point
         (50, 0),       # 2: Start of straight section
         (200, 50),      # 3: Straight section
@@ -271,7 +279,7 @@ def visualize_race_track(center_line, inner_boundary, outer_boundary, waypoints,
         clothoid_x, clothoid_y = clothoid_path
     
         # Plot clothoid path
-        ax.plot(clothoid_x, clothoid_y, 'y--', linewidth=2, label='Vehicle Trajectory (Clothoid)')
+        ax.plot(clothoid_x, clothoid_y, 'y--', linewidth=2, label='Vehicle Trajectory (Optimial)')
         
         # Plot waypoints
         ax.plot(x_points, y_points, 'ro', markersize=6, label='Waypoints')
@@ -294,7 +302,7 @@ def visualize_race_track(center_line, inner_boundary, outer_boundary, waypoints,
                 ax.add_patch(arrow)
     
     # Find index corresponding to x=4 for Start/Finish line
-    distances = np.abs(x_center - 4.0)
+    distances = np.abs(x_center )
     start_idx = np.argmin(distances)
     
     # Add "Start/Finish" line at position (4, 0)
@@ -323,8 +331,8 @@ def visualize_race_track(center_line, inner_boundary, outer_boundary, waypoints,
             max(np.max(x_inner), np.max(x_outer)) + margin]
     ylim = [min(np.min(y_inner), np.min(y_outer)) - margin, 
             max(np.max(y_inner), np.max(y_outer)) + margin]
-    ax.set_xlim(xlim)
-    ax.set_ylim(ylim)
+    # ax.set_xlim(xlim)
+    # ax.set_ylim(ylim)
     
     plt.tight_layout()
     return fig, ax
@@ -344,7 +352,7 @@ def main():
         outer_boundary, 
         waypoints,
         clothoid_path= None,
-        title="Race Track with Clothoid Path for Vehicle Trajectory"
+        title="Race Track with Vehicle Trajectory"
     )
     
     plt.show()
