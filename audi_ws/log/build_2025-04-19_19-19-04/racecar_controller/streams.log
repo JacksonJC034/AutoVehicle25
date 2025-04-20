@@ -1,0 +1,38 @@
+[1.362s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data
+[1.716s] running egg_info
+[1.717s] writing ../../build/racecar_controller/racecar_controller.egg-info/PKG-INFO
+[1.718s] writing dependency_links to ../../build/racecar_controller/racecar_controller.egg-info/dependency_links.txt
+[1.718s] writing entry points to ../../build/racecar_controller/racecar_controller.egg-info/entry_points.txt
+[1.718s] writing requirements to ../../build/racecar_controller/racecar_controller.egg-info/requires.txt
+[1.718s] writing top-level names to ../../build/racecar_controller/racecar_controller.egg-info/top_level.txt
+[1.720s] reading manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.721s] writing manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.722s] running build
+[1.722s] running build_py
+[1.722s] copying simulation_files/get_track.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.722s] copying simulation_files/constants.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.723s] copying simulation_files/simulation.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.723s] copying simulation_files/longtitudinal.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.723s] running install
+[1.724s] running install_lib
+[1.725s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/get_track.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.725s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/constants.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.725s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/simulation.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.725s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/longtitudinal.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.726s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/get_track.py to get_track.cpython-310.pyc
+[1.727s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/constants.py to constants.cpython-310.pyc
+[1.727s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/simulation.py to simulation.cpython-310.pyc
+[1.728s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/longtitudinal.py to longtitudinal.cpython-310.pyc
+[1.728s]   File "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/longtitudinal.py", line 12
+[1.728s]     deltaK = 
+[1.728s]              ^
+[1.728s] SyntaxError: invalid syntax
+[1.728s] 
+[1.728s] running install_data
+[1.728s] running install_egg_info
+[1.730s] removing '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/racecar_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.731s] Copying ../../build/racecar_controller/racecar_controller.egg-info to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/racecar_controller-0.0.0-py3.10.egg-info
+[1.732s] running install_scripts
+[1.753s] Installing simulation script to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/racecar_controller
+[1.754s] writing list of installed files to '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log'
+[1.797s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files' returned '0': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data

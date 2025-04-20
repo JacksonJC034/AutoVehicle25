@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--
+  Gazebo ROS ackermann drive plugin demo
+
+  Try sending commands:
+
+    ros2 topic pub /demo/cmd_demo geometry_msgs/msg/Twist '{linear: {x: 1.0}, angular: {z: 0.1}}' -1
+
+  Try listening to odometry:
+
+    ros2 topic echo /demo/odom_demo
+
+  Try listening to odometer reading(linear distance convered):
+
+    ros2 topic echo /demo/distance_demo
+
+  Try listening to TF:
+
+    ros2 run tf2_ros tf2_echo odom_demo chassis
+
+    and other links
+-->
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <sky>
+        <color>1 1 1 1</color>  <!-- This sets the sky color to white -->
+    </sky>
+
+  <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>50</mu>
+              </ode>
+              <bullet>
+                <friction>1</friction>
+                <rolling_friction>0.10000000000000001</rolling_friction>
+              </bullet>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <!-- Make the ground white and solid -->
+            <ambient>1 1 1 1</ambient>  <!-- White ambient color -->
+            <diffuse>1 1 1 1</diffuse>  <!-- White diffuse color -->
+            <specular>0 0 0 1</specular>  <!-- No specular highlights -->
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+
+
+    <include>
+      <uri>model://autocar</uri>
+      <pose>0 0 0 0 -0 0</pose>
+      <static>false</static>
+    </include>
+</world>
+</sdf>

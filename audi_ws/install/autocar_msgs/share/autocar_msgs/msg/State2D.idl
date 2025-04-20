@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autocar_msgs/msg/State2D.msg
+// generated code does not contain a copyright notice
+
+#include "autocar_msgs/msg/Twist2D.idl"
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module autocar_msgs {
+  module msg {
+    struct State2D {
+      geometry_msgs::msg::Pose2D pose;
+
+      autocar_msgs::msg::Twist2D twist;
+    };
+  };
+};

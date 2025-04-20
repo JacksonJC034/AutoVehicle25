@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7152d4fb15f55e8e9bc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "autocar_msgs__py",
+					"jsonFile" : "directory-autocar_msgs__py-f32b3c1db18ff2aa279e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_msgs/autocar_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "autocar_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_autocar_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_autocar_msgs_egg-7dbf838eedee908bc905.json",
+					"name" : "ament_cmake_python_build_autocar_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_autocar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_autocar_msgs-9e7feb0b4c6d0eed36bc.json",
+					"name" : "ament_cmake_python_copy_autocar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs-f4aebfd69a51665c0124.json",
+					"name" : "autocar_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__cpp-3ec8c66ca55001237906.json",
+					"name" : "autocar_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "autocar_msgs__py::@5da664499cf845f6967e",
+					"jsonFile" : "target-autocar_msgs__py-adf92c16407ad1831037.json",
+					"name" : "autocar_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_generator_c-47cdd73e61f2e7a93273.json",
+					"name" : "autocar_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_generator_py-bf179780d84f83a8ad53.json",
+					"name" : "autocar_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_c-319cafa1bc859531513e.json",
+					"name" : "autocar_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_c__pyext-c8f5c96bba53b389ccec.json",
+					"name" : "autocar_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_cpp-4236a06520ef1d25e9c1.json",
+					"name" : "autocar_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_fastrtps_c-90b65f6347de14c330a3.json",
+					"name" : "autocar_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_fastrtps_c__pyext-4230bfcd5ab425906614.json",
+					"name" : "autocar_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_fastrtps_cpp-b1f59826619758a618fa.json",
+					"name" : "autocar_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_introspection_c-1a78ec796150b6e640d3.json",
+					"name" : "autocar_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_introspection_c__pyext-bda2cbb7d130c388e0a5.json",
+					"name" : "autocar_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs__rosidl_typesupport_introspection_cpp-367fd27b9d882d790239.json",
+					"name" : "autocar_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_msgs_uninstall-e748828a55e3667fabd4.json",
+					"name" : "autocar_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5271d32f367156dfe8fa.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_msgs",
+		"source" : "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

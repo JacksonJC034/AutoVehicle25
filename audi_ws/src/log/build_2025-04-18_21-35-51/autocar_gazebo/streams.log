@@ -1,0 +1,64 @@
+[0.029s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_gazebo -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo
+[0.178s] -- The C compiler identification is GNU 10.5.0
+[0.277s] -- The CXX compiler identification is GNU 10.5.0
+[0.286s] -- Detecting C compiler ABI info
+[0.384s] -- Detecting C compiler ABI info - done
+[0.394s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.394s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.399s] -- Detecting CXX compiler ABI info
+[0.509s] -- Detecting CXX compiler ABI info - done
+[0.515s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.516s] -- Detecting CXX compile features
+[0.517s] -- Detecting CXX compile features - done
+[0.525s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.757s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.934s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.062s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.067s] -- Added test 'lint_cmake' to check CMake code style
+[1.069s] -- Added test 'xmllint' to check XML markup files
+[1.071s] -- Configuring done
+[1.075s] -- Generating done
+[1.077s] -- Build files have been written to: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo
+[1.087s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_gazebo -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo
+[1.088s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo -- -j12 -l12
+[1.133s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo -- -j12 -l12
+[1.135s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo
+[1.144s] -- Install configuration: ""
+[1.144s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds
+[1.144s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/road.world
+[1.145s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/autocar_city.world
+[1.145s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/populated_road.world
+[1.145s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/empty.world
+[1.145s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/autocar_spawn.world
+[1.145s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/worlds/autocar.world
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/hokuyo.dae
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/bl_1.stl
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/burger_base.dae
+[1.146s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/fr_1.stl
+[1.147s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/lds.dae
+[1.148s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/spoiler.stl
+[1.149s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/fl_1.stl
+[1.149s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/chassis_link.stl
+[1.150s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/br_1.stl
+[1.150s] -- Installing: /home/dliujm/.gazebo/models/autocar/meshes/tire.dae
+[1.150s] -- Installing: /home/dliujm/.gazebo/models/autocar/model.sdf
+[1.150s] -- Installing: /home/dliujm/.gazebo/models/autocar/model.config
+[1.150s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/ament_index/resource_index/package_run_dependencies/autocar_gazebo
+[1.151s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/ament_index/resource_index/parent_prefix_path/autocar_gazebo
+[1.151s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/environment/ament_prefix_path.sh
+[1.151s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/environment/ament_prefix_path.dsv
+[1.151s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/environment/path.sh
+[1.152s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/environment/path.dsv
+[1.152s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/local_setup.bash
+[1.152s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/local_setup.sh
+[1.152s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/local_setup.zsh
+[1.152s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/local_setup.dsv
+[1.153s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/package.dsv
+[1.153s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/ament_index/resource_index/packages/autocar_gazebo
+[1.153s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/cmake/autocar_gazeboConfig.cmake
+[1.153s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/cmake/autocar_gazeboConfig-version.cmake
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_gazebo/share/autocar_gazebo/package.xml
+[1.170s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_gazebo

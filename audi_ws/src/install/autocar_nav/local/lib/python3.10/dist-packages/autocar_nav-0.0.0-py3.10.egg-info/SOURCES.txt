@@ -1,0 +1,9 @@
+setup.py
+autocar_nav/__init__.py
+autocar_nav/cubic_spline_interpolator.py
+autocar_nav/normalise_angle.py
+autocar_nav/yaw_to_quaternion.py
+autocar_nav.egg-info/PKG-INFO
+autocar_nav.egg-info/SOURCES.txt
+autocar_nav.egg-info/dependency_links.txt
+autocar_nav.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target bof[0m
+[100%] Built target bof
+-- Install configuration: ""
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/lib/autocar_map/bof
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/ament_index/resource_index/package_run_dependencies/autocar_map
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/ament_index/resource_index/parent_prefix_path/autocar_map
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/environment/path.sh
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/environment/path.dsv
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/local_setup.bash
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/local_setup.sh
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/local_setup.zsh
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/local_setup.dsv
+-- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/package.dsv
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/ament_index/resource_index/packages/autocar_map
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/cmake/autocar_mapConfig.cmake
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/cmake/autocar_mapConfig-version.cmake
+-- Up-to-date: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_map/share/autocar_map/package.xml

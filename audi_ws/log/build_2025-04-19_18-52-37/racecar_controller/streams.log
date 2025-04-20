@@ -1,0 +1,24 @@
+[1.258s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data
+[1.559s] running egg_info
+[1.559s] writing ../../build/racecar_controller/racecar_controller.egg-info/PKG-INFO
+[1.559s] writing dependency_links to ../../build/racecar_controller/racecar_controller.egg-info/dependency_links.txt
+[1.560s] writing entry points to ../../build/racecar_controller/racecar_controller.egg-info/entry_points.txt
+[1.560s] writing requirements to ../../build/racecar_controller/racecar_controller.egg-info/requires.txt
+[1.560s] writing top-level names to ../../build/racecar_controller/racecar_controller.egg-info/top_level.txt
+[1.562s] reading manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.563s] writing manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.563s] running build
+[1.563s] running build_py
+[1.563s] copying simulation_files/simulation.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.564s] running install
+[1.564s] running install_lib
+[1.565s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/simulation.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.566s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/simulation.py to simulation.cpython-310.pyc
+[1.568s] running install_data
+[1.568s] running install_egg_info
+[1.570s] removing '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/racecar_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.570s] Copying ../../build/racecar_controller/racecar_controller.egg-info to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/racecar_controller-0.0.0-py3.10.egg-info
+[1.571s] running install_scripts
+[1.593s] Installing simulation script to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/racecar_controller
+[1.594s] writing list of installed files to '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log'
+[1.644s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files' returned '0': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data

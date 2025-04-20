@@ -1,0 +1,48 @@
+[0.024s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches
+[0.166s] -- The C compiler identification is GNU 10.5.0
+[0.267s] -- The CXX compiler identification is GNU 10.5.0
+[0.276s] -- Detecting C compiler ABI info
+[0.375s] -- Detecting C compiler ABI info - done
+[0.383s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.384s] -- Detecting C compile features
+[0.384s] -- Detecting C compile features - done
+[0.388s] -- Detecting CXX compiler ABI info
+[0.500s] -- Detecting CXX compiler ABI info - done
+[0.508s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.508s] -- Detecting CXX compile features
+[0.508s] -- Detecting CXX compile features - done
+[0.516s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.748s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.925s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.054s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.056s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.057s] -- Added test 'lint_cmake' to check CMake code style
+[1.058s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.059s] -- Added test 'xmllint' to check XML markup files
+[1.062s] -- Configuring done
+[1.066s] -- Generating done
+[1.068s] -- Build files have been written to: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches
+[1.075s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches
+[1.076s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches -- -j12 -l12
+[1.121s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches -- -j12 -l12
+[1.123s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches
+[1.132s] -- Install configuration: ""
+[1.132s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/launch
+[1.133s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/launch/default_launch.py
+[1.133s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/launch/click_launch.py
+[1.133s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/ament_index/resource_index/package_run_dependencies/launches
+[1.134s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/ament_index/resource_index/parent_prefix_path/launches
+[1.134s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/environment/ament_prefix_path.sh
+[1.134s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/environment/ament_prefix_path.dsv
+[1.135s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/environment/path.sh
+[1.135s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/environment/path.dsv
+[1.135s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/local_setup.bash
+[1.135s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/local_setup.sh
+[1.135s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/local_setup.zsh
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/local_setup.dsv
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/package.dsv
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/ament_index/resource_index/packages/launches
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/cmake/launchesConfig.cmake
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/cmake/launchesConfig-version.cmake
+[1.136s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/launches/share/launches/package.xml
+[1.140s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/launches

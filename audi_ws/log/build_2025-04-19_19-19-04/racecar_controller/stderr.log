@@ -1,0 +1,5 @@
+  File "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/longtitudinal.py", line 12
+    deltaK = 
+             ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/PKG-INFO
+writing dependency_links to ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/dependency_links.txt
+writing entry points to ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/entry_points.txt
+writing requirements to ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/requires.txt
+writing top-level names to ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/top_level.txt
+reading manifest file '../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+writing manifest file '../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+copying vehicle_state_publisher/publish_states.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+running install
+running install_lib
+copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/publish_states.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/publish_states.py to publish_states.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/vehicle_state_publisher/vehicle_state_publisher.egg-info to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publish_states script to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/vehicle_state_publisher/lib/vehicle_state_publisher
+writing list of installed files to '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/vehicle_state_publisher/install.log'

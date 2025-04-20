@@ -1,0 +1,3 @@
+source;share/autocar_nav/environment/ament_prefix_path.sh
+source;share/autocar_nav/environment/path.sh
+source;share/autocar_nav/environment/pythonpath.sh

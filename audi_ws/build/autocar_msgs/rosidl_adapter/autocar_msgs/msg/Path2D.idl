@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autocar_msgs/msg/Path2D.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module autocar_msgs {
+  module msg {
+    struct Path2D {
+      sequence<geometry_msgs::msg::Pose2D> poses;
+    };
+  };
+};

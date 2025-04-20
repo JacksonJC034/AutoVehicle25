@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autocar_msgs/msg/VehicleStates.msg
+// generated code does not contain a copyright notice
+
+
+module autocar_msgs {
+  module msg {
+    struct VehicleStates {
+      double time;
+
+      double x;
+
+      double y;
+
+      double theta;
+
+      double fr_angle;
+
+      double fl_angle;
+
+      double br_angle;
+
+      double bl_angle;
+    };
+  };
+};

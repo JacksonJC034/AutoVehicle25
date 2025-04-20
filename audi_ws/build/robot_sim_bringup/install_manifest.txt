@@ -1,7 +1,9 @@
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/robotics_room.sdf
+/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/track1_world.sdf
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/vehicle_world.sdf
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/block_room.sdf
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/lucy_world.sdf
+/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup/worlds/line_world.sdf
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup//launch/__pycache__/bringup_lidar.launch.cpython-310.pyc
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup//launch/block_sim.launch.py
 /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/robot_sim_bringup/share/robot_sim_bringup//launch/.vscode/settings.json

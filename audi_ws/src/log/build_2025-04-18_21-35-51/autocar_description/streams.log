@@ -1,0 +1,57 @@
+[0.033s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_description -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description
+[0.184s] -- The C compiler identification is GNU 10.5.0
+[0.275s] -- The CXX compiler identification is GNU 10.5.0
+[0.288s] -- Detecting C compiler ABI info
+[0.389s] -- Detecting C compiler ABI info - done
+[0.396s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.396s] -- Detecting C compile features
+[0.397s] -- Detecting C compile features - done
+[0.400s] -- Detecting CXX compiler ABI info
+[0.513s] -- Detecting CXX compiler ABI info - done
+[0.521s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.521s] -- Detecting CXX compile features
+[0.522s] -- Detecting CXX compile features - done
+[0.530s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.761s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.939s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.070s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.073s] -- Added test 'lint_cmake' to check CMake code style
+[1.075s] -- Added test 'xmllint' to check XML markup files
+[1.077s] -- Configuring done
+[1.080s] -- Generating done
+[1.083s] -- Build files have been written to: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description
+[1.093s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_description -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description
+[1.094s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description -- -j12 -l12
+[1.142s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description -- -j12 -l12
+[1.144s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description
+[1.154s] -- Install configuration: ""
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/hokuyo.dae
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/bl_1.stl
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/fr_1.stl
+[1.154s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/lds.dae
+[1.155s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/spoiler.stl
+[1.155s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/fl_1.stl
+[1.155s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/chassis_link.stl
+[1.157s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/br_1.stl
+[1.157s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//meshes/tire.dae
+[1.157s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//urdf
+[1.158s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//urdf/autocar.xacro
+[1.158s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//rviz
+[1.158s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description//rviz/view.rviz
+[1.158s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/ament_index/resource_index/package_run_dependencies/autocar_description
+[1.159s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/ament_index/resource_index/parent_prefix_path/autocar_description
+[1.159s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/environment/ament_prefix_path.sh
+[1.159s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/environment/ament_prefix_path.dsv
+[1.159s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/environment/path.sh
+[1.160s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/environment/path.dsv
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/local_setup.bash
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/local_setup.sh
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/local_setup.zsh
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/local_setup.dsv
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/package.dsv
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/ament_index/resource_index/packages/autocar_description
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/cmake/autocar_descriptionConfig.cmake
+[1.161s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/cmake/autocar_descriptionConfig-version.cmake
+[1.162s] -- Installing: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/install/autocar_description/share/autocar_description/package.xml
+[1.186s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dliujm/ros2_ws/install/voice_command:/home/dliujm/ros2_ws/install/semantic_mapping:/home/dliujm/ros2_ws/install/semantic_labeling_demo:/home/dliujm/ros2_ws/install/racing_controller:/home/dliujm/ros2_ws/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/install/lucy_hardware:/home/dliujm/ros2_ws/install/image_saver:/home/dliujm/ros2_ws/src/install/semantic_mapping:/home/dliujm/ros2_ws/src/install/semantic_labeling_demo:/home/dliujm/ros2_ws/src/install/odom_tf_broadcaster_pkg:/home/dliujm/ros2_ws/src/install/lucy_hardware:/home/dliujm/ros2_ws/src/install/image_saver:/opt/ros/humble /usr/bin/cmake --install /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/build/autocar_description

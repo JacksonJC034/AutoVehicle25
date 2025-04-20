@@ -1,0 +1,24 @@
+[0.737s] Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/vehicle_state_publisher': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_state_publisher build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log --single-version-externally-managed install_data
+[0.974s] running egg_info
+[0.975s] writing ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/PKG-INFO
+[0.975s] writing dependency_links to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/dependency_links.txt
+[0.975s] writing entry points to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/entry_points.txt
+[0.975s] writing requirements to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/requires.txt
+[0.975s] writing top-level names to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/top_level.txt
+[0.977s] reading manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+[0.977s] writing manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+[0.978s] running build
+[0.978s] running build_py
+[0.978s] copying vehicle_state_publisher/publish_states.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+[0.978s] running install
+[0.979s] running install_lib
+[0.979s] copying /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/publish_states.py -> /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+[0.980s] byte-compiling /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/publish_states.py to publish_states.cpython-310.pyc
+[0.981s] running install_data
+[0.981s] running install_egg_info
+[0.982s] removing '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.982s] Copying ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info
+[0.983s] running install_scripts
+[1.000s] Installing publish_states script to /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/vehicle_state_publisher
+[1.001s] writing list of installed files to '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log'
+[1.020s] Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/vehicle_state_publisher' returned '0': PYTHONPATH=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_state_publisher build --build-base /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build install --record /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log --single-version-externally-managed install_data
