@@ -118,16 +118,33 @@ def generate_race_track(
     outer_y = y_smooth + ny * track_width / 2
     
     center_line = (x_smooth, y_smooth)
-    filename = "../MW208_Raceline_Optimization/my_track.csv"
-
+    # filename = "../MW208_Raceline_Optimization/my_track.csv"
+    center_line_csv  = '/home/dliujm/my_track_1.csv'
+    inner_boundary_csv = '/home/dliujm/track_1_inner_boundary.csv'
+    outer_boundary_csv = '/home/dliujm/track_1_outer_boundary.csv'
     
-    with open(filename, mode='w', newline='') as file:
+    inner_boundary = (inner_x, inner_y)
+    outer_boundary = (outer_x, outer_y)
+    
+    with open(center_line_csv, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["x", "y", "inner_offset", "outer_offset"])  # Header
         for x, y in zip(x_smooth, y_smooth):
             writer.writerow([x, y, track_width/2, track_width/2])
-    inner_boundary = (inner_x, inner_y)
-    outer_boundary = (outer_x, outer_y)
+    
+    with open(inner_boundary_csv, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["x", "y"])  # Header
+        for (x, y) in zip (inner_x, inner_y):
+            writer.writerow([x, y])
+    
+    with open(outer_boundary_csv, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["x", "y"])  # Header
+        for (x, y) in zip (outer_x, outer_y):
+            writer.writerow([x, y])
+    
+
     
     return center_line, inner_boundary, outer_boundary, waypoints
 
@@ -368,7 +385,7 @@ def visualize_race_track(center_line, inner_boundary, outer_boundary, waypoints,
 def main():
     # Generate race track
     center_line, inner_boundary, outer_boundary, waypoints = generate_race_track(
-        num_points=2000, 
+        num_points=200, 
         track_width= 12
     )
     
