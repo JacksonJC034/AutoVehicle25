@@ -1,7 +1,11 @@
 msg/Path2D.idl
 msg/Path2D.msg
+msg/SlipCondition.idl
+msg/SlipCondition.msg
 msg/State2D.idl
 msg/State2D.msg
+msg/TireSlips.idl
+msg/TireSlips.msg
 msg/Twist2D.idl
 msg/Twist2D.msg
 msg/VehicleStates.idl

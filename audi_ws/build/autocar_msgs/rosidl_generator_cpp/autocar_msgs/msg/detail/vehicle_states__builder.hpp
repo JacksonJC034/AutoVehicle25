@@ -21,16 +21,64 @@ namespace msg
 namespace builder
 {
 
+class Init_VehicleStates_wheel_speeds
+{
+public:
+  explicit Init_VehicleStates_wheel_speeds(::autocar_msgs::msg::VehicleStates & msg)
+  : msg_(msg)
+  {}
+  ::autocar_msgs::msg::VehicleStates wheel_speeds(::autocar_msgs::msg::VehicleStates::_wheel_speeds_type arg)
+  {
+    msg_.wheel_speeds = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::autocar_msgs::msg::VehicleStates msg_;
+};
+
+class Init_VehicleStates_vy
+{
+public:
+  explicit Init_VehicleStates_vy(::autocar_msgs::msg::VehicleStates & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleStates_wheel_speeds vy(::autocar_msgs::msg::VehicleStates::_vy_type arg)
+  {
+    msg_.vy = std::move(arg);
+    return Init_VehicleStates_wheel_speeds(msg_);
+  }
+
+private:
+  ::autocar_msgs::msg::VehicleStates msg_;
+};
+
+class Init_VehicleStates_vx
+{
+public:
+  explicit Init_VehicleStates_vx(::autocar_msgs::msg::VehicleStates & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleStates_vy vx(::autocar_msgs::msg::VehicleStates::_vx_type arg)
+  {
+    msg_.vx = std::move(arg);
+    return Init_VehicleStates_vy(msg_);
+  }
+
+private:
+  ::autocar_msgs::msg::VehicleStates msg_;
+};
+
 class Init_VehicleStates_bl_angle
 {
 public:
   explicit Init_VehicleStates_bl_angle(::autocar_msgs::msg::VehicleStates & msg)
   : msg_(msg)
   {}
-  ::autocar_msgs::msg::VehicleStates bl_angle(::autocar_msgs::msg::VehicleStates::_bl_angle_type arg)
+  Init_VehicleStates_vx bl_angle(::autocar_msgs::msg::VehicleStates::_bl_angle_type arg)
   {
     msg_.bl_angle = std::move(arg);
-    return std::move(msg_);
+    return Init_VehicleStates_vx(msg_);
   }
 
 private:

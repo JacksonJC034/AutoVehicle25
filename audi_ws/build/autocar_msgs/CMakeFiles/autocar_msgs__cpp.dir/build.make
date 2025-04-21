@@ -86,6 +86,16 @@ CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehic
 CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__struct.hpp
 CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__traits.hpp
 CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__type_support.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/tire_slips.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__builder.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__struct.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__traits.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__type_support.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/slip_condition.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__builder.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__struct.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__traits.hpp
+CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__type_support.hpp
 CMakeFiles/autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -107,6 +117,8 @@ rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/m
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/msg/State2D.idl
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/msg/Twist2D.idl
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/msg/VehicleStates.idl
+rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/msg/TireSlips.idl
+rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: rosidl_adapter/autocar_msgs/msg/SlipCondition.idl
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -229,15 +241,53 @@ rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__traits.hpp: rosidl_
 rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__type_support.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__type_support.hpp
 
+rosidl_generator_cpp/autocar_msgs/msg/tire_slips.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/tire_slips.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__builder.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__builder.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__struct.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__struct.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__traits.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__traits.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__type_support.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__type_support.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/slip_condition.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/slip_condition.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__builder.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__builder.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__struct.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__struct.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__traits.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__traits.hpp
+
+rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__type_support.hpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__type_support.hpp
+
 autocar_msgs__cpp: CMakeFiles/autocar_msgs__cpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/path2_d__builder.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/path2_d__struct.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/path2_d__traits.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/path2_d__type_support.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__builder.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__struct.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__traits.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/slip_condition__type_support.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/state2_d__builder.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/state2_d__struct.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/state2_d__traits.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/state2_d__type_support.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__builder.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__struct.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__traits.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/tire_slips__type_support.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/twist2_d__builder.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/twist2_d__struct.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/twist2_d__traits.hpp
@@ -247,7 +297,9 @@ autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__traits.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/detail/vehicle_states__type_support.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/path2_d.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/slip_condition.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/state2_d.hpp
+autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/tire_slips.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/twist2_d.hpp
 autocar_msgs__cpp: rosidl_generator_cpp/autocar_msgs/msg/vehicle_states.hpp
 autocar_msgs__cpp: CMakeFiles/autocar_msgs__cpp.dir/build.make

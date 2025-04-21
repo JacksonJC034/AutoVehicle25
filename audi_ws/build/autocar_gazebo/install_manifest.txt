@@ -4,6 +4,7 @@
 /home/fishros/AutoVehicle25/audi_ws/install/autocar_gazebo/share/autocar_gazebo/worlds/populated_road.world
 /home/fishros/AutoVehicle25/audi_ws/install/autocar_gazebo/share/autocar_gazebo/worlds/autocar_city.world
 /home/fishros/AutoVehicle25/audi_ws/install/autocar_gazebo/share/autocar_gazebo/worlds/road.world
+/home/fishros/AutoVehicle25/audi_ws/install/autocar_gazebo/share/autocar_gazebo/worlds/slippery_test.world
 /home/fishros/.gazebo/models/autocar/model.sdf
 /home/fishros/.gazebo/models/autocar/meshes/burger_base.dae
 /home/fishros/.gazebo/models/autocar/meshes/br_1.stl

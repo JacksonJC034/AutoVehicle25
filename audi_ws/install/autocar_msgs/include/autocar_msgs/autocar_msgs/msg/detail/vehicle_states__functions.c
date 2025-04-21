@@ -11,6 +11,10 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `wheel_speeds`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 bool
 autocar_msgs__msg__VehicleStates__init(autocar_msgs__msg__VehicleStates * msg)
 {
@@ -25,6 +29,13 @@ autocar_msgs__msg__VehicleStates__init(autocar_msgs__msg__VehicleStates * msg)
   // fl_angle
   // br_angle
   // bl_angle
+  // vx
+  // vy
+  // wheel_speeds
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->wheel_speeds, 0)) {
+    autocar_msgs__msg__VehicleStates__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -42,6 +53,10 @@ autocar_msgs__msg__VehicleStates__fini(autocar_msgs__msg__VehicleStates * msg)
   // fl_angle
   // br_angle
   // bl_angle
+  // vx
+  // vy
+  // wheel_speeds
+  rosidl_runtime_c__double__Sequence__fini(&msg->wheel_speeds);
 }
 
 bool
@@ -82,6 +97,20 @@ autocar_msgs__msg__VehicleStates__are_equal(const autocar_msgs__msg__VehicleStat
   if (lhs->bl_angle != rhs->bl_angle) {
     return false;
   }
+  // vx
+  if (lhs->vx != rhs->vx) {
+    return false;
+  }
+  // vy
+  if (lhs->vy != rhs->vy) {
+    return false;
+  }
+  // wheel_speeds
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->wheel_speeds), &(rhs->wheel_speeds)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -109,6 +138,16 @@ autocar_msgs__msg__VehicleStates__copy(
   output->br_angle = input->br_angle;
   // bl_angle
   output->bl_angle = input->bl_angle;
+  // vx
+  output->vx = input->vx;
+  // vy
+  output->vy = input->vy;
+  // wheel_speeds
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->wheel_speeds), &(output->wheel_speeds)))
+  {
+    return false;
+  }
   return true;
 }
 

@@ -1,0 +1,57 @@
+[0.017s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_description -DCMAKE_INSTALL_PREFIX=/home/fishros/AutoVehicle25/audi_ws/install/autocar_description
+[0.249s] -- The C compiler identification is GNU 11.4.0
+[0.249s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.249s] -- Detecting C compiler ABI info - done
+[0.249s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.250s] -- Detecting C compile features
+[0.250s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.250s] -- Detecting CXX compiler ABI info - done
+[0.250s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.250s] -- Detecting CXX compile features
+[0.250s] -- Detecting CXX compile features - done
+[0.250s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.335s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.408s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.471s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.473s] -- Added test 'lint_cmake' to check CMake code style
+[0.474s] -- Added test 'xmllint' to check XML markup files
+[0.475s] -- Configuring done
+[0.477s] -- Generating done
+[0.478s] -- Build files have been written to: /home/fishros/AutoVehicle25/audi_ws/build/autocar_description
+[0.489s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_description -DCMAKE_INSTALL_PREFIX=/home/fishros/AutoVehicle25/audi_ws/install/autocar_description
+[0.489s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake --build /home/fishros/AutoVehicle25/audi_ws/build/autocar_description -- -j16 -l16
+[0.525s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake --build /home/fishros/AutoVehicle25/audi_ws/build/autocar_description -- -j16 -l16
+[0.527s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake --install /home/fishros/AutoVehicle25/audi_ws/build/autocar_description
+[0.532s] -- Install configuration: ""
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/br_1.stl
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/fr_1.stl
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/spoiler.stl
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/tire.dae
+[0.533s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/hokuyo.dae
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/fl_1.stl
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/chassis_link.stl
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/bl_1.stl
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//meshes/lds.dae
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//urdf
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//urdf/autocar.xacro
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//rviz
+[0.534s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description//rviz/view.rviz
+[0.535s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/ament_index/resource_index/package_run_dependencies/autocar_description
+[0.535s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/ament_index/resource_index/parent_prefix_path/autocar_description
+[0.535s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/environment/ament_prefix_path.sh
+[0.535s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/environment/ament_prefix_path.dsv
+[0.536s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/environment/path.sh
+[0.536s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/environment/path.dsv
+[0.536s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/local_setup.bash
+[0.536s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/local_setup.sh
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/local_setup.zsh
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/local_setup.dsv
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/package.dsv
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/ament_index/resource_index/packages/autocar_description
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/cmake/autocar_descriptionConfig.cmake
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/cmake/autocar_descriptionConfig-version.cmake
+[0.537s] -- Installing: /home/fishros/AutoVehicle25/audi_ws/install/autocar_description/share/autocar_description/package.xml
+[0.550s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/build/autocar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller:/opt/ros/humble /usr/bin/cmake --install /home/fishros/AutoVehicle25/audi_ws/build/autocar_description

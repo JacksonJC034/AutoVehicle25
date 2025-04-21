@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autocar_msgs/msg/TireSlips.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module autocar_msgs {
+  module msg {
+    struct TireSlips {
+      std_msgs::msg::Header header;
+
+      double front_alpha;
+
+      double rear_alpha;
+
+      double front_k;
+
+      double rear_k;
+    };
+  };
+};

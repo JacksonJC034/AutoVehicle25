@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autocar_msgs/msg/SlipCondition.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module autocar_msgs {
+  module msg {
+    struct SlipCondition {
+      std_msgs::msg::Header header;
+
+      boolean front_saturated;
+
+      boolean rear_saturated;
+
+      double front_delta_alpha;
+
+      double front_delta_k;
+
+      double rear_delta_alpha;
+
+      double rear_delta_k;
+    };
+  };
+};

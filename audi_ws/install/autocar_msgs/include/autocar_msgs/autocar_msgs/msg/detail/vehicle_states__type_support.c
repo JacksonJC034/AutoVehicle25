@@ -12,6 +12,10 @@
 #include "autocar_msgs/msg/detail/vehicle_states__struct.h"
 
 
+// Include directives for member types
+// Member `wheel_speeds`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +35,62 @@ void autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__Vehic
   autocar_msgs__msg__VehicleStates__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__VehicleStates_message_member_array[8] = {
+size_t autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__size_function__VehicleStates__wheel_speeds(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__double__Sequence * member =
+    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_const_function__VehicleStates__wheel_speeds(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__double__Sequence * member =
+    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_function__VehicleStates__wheel_speeds(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__double__Sequence * member =
+    (rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__fetch_function__VehicleStates__wheel_speeds(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const double * item =
+    ((const double *)
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_const_function__VehicleStates__wheel_speeds(untyped_member, index));
+  double * value =
+    (double *)(untyped_value);
+  *value = *item;
+}
+
+void autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__assign_function__VehicleStates__wheel_speeds(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  double * item =
+    ((double *)
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_function__VehicleStates__wheel_speeds(untyped_member, index));
+  const double * value =
+    (const double *)(untyped_value);
+  *item = *value;
+}
+
+bool autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__resize_function__VehicleStates__wheel_speeds(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__double__Sequence * member =
+    (rosidl_runtime_c__double__Sequence *)(untyped_member);
+  rosidl_runtime_c__double__Sequence__fini(member);
+  return rosidl_runtime_c__double__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__VehicleStates_message_member_array[11] = {
   {
     "time",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -167,13 +226,64 @@ static rosidl_typesupport_introspection_c__MessageMember autocar_msgs__msg__Vehi
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "vx",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(autocar_msgs__msg__VehicleStates, vx),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "vy",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(autocar_msgs__msg__VehicleStates, vy),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "wheel_speeds",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(autocar_msgs__msg__VehicleStates, wheel_speeds),  // bytes offset in struct
+    NULL,  // default value
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__size_function__VehicleStates__wheel_speeds,  // size() function pointer
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_const_function__VehicleStates__wheel_speeds,  // get_const(index) function pointer
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__get_function__VehicleStates__wheel_speeds,  // get(index) function pointer
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__fetch_function__VehicleStates__wheel_speeds,  // fetch(index, &value) function pointer
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__assign_function__VehicleStates__wheel_speeds,  // assign(index, value) function pointer
+    autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__resize_function__VehicleStates__wheel_speeds  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__VehicleStates_message_members = {
   "autocar_msgs__msg",  // message namespace
   "VehicleStates",  // message name
-  8,  // number of fields
+  11,  // number of fields
   sizeof(autocar_msgs__msg__VehicleStates),
   autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__VehicleStates_message_member_array,  // message members
   autocar_msgs__msg__VehicleStates__rosidl_typesupport_introspection_c__VehicleStates_init_function,  // function to initialize message memory (memory has to be allocated)

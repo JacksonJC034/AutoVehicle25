@@ -70,6 +70,8 @@ CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/aut
 CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/State2D.msg
 CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/Twist2D.msg
 CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/VehicleStates.msg
+CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/TireSlips.msg
+CMakeFiles/autocar_msgs: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/SlipCondition.msg
 CMakeFiles/autocar_msgs: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/autocar_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/autocar_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

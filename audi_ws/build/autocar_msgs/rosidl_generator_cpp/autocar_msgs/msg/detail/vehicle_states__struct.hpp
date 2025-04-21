@@ -46,6 +46,8 @@ struct VehicleStates_
       this->fl_angle = 0.0;
       this->br_angle = 0.0;
       this->bl_angle = 0.0;
+      this->vx = 0.0;
+      this->vy = 0.0;
     }
   }
 
@@ -63,6 +65,8 @@ struct VehicleStates_
       this->fl_angle = 0.0;
       this->br_angle = 0.0;
       this->bl_angle = 0.0;
+      this->vx = 0.0;
+      this->vy = 0.0;
     }
   }
 
@@ -91,6 +95,15 @@ struct VehicleStates_
   using _bl_angle_type =
     double;
   _bl_angle_type bl_angle;
+  using _vx_type =
+    double;
+  _vx_type vx;
+  using _vy_type =
+    double;
+  _vy_type vy;
+  using _wheel_speeds_type =
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+  _wheel_speeds_type wheel_speeds;
 
   // setters for named parameter idiom
   Type & set__time(
@@ -139,6 +152,24 @@ struct VehicleStates_
     const double & _arg)
   {
     this->bl_angle = _arg;
+    return *this;
+  }
+  Type & set__vx(
+    const double & _arg)
+  {
+    this->vx = _arg;
+    return *this;
+  }
+  Type & set__vy(
+    const double & _arg)
+  {
+    this->vy = _arg;
+    return *this;
+  }
+  Type & set__wheel_speeds(
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
+  {
+    this->wheel_speeds = _arg;
     return *this;
   }
 
@@ -206,6 +237,15 @@ struct VehicleStates_
       return false;
     }
     if (this->bl_angle != other.bl_angle) {
+      return false;
+    }
+    if (this->vx != other.vx) {
+      return false;
+    }
+    if (this->vy != other.vy) {
+      return false;
+    }
+    if (this->wheel_speeds != other.wheel_speeds) {
       return false;
     }
     return true;

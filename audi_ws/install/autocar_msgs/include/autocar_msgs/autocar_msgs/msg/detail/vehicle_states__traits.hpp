@@ -78,6 +78,38 @@ inline void to_flow_style_yaml(
   {
     out << "bl_angle: ";
     rosidl_generator_traits::value_to_yaml(msg.bl_angle, out);
+    out << ", ";
+  }
+
+  // member: vx
+  {
+    out << "vx: ";
+    rosidl_generator_traits::value_to_yaml(msg.vx, out);
+    out << ", ";
+  }
+
+  // member: vy
+  {
+    out << "vy: ";
+    rosidl_generator_traits::value_to_yaml(msg.vy, out);
+    out << ", ";
+  }
+
+  // member: wheel_speeds
+  {
+    if (msg.wheel_speeds.size() == 0) {
+      out << "wheel_speeds: []";
+    } else {
+      out << "wheel_speeds: [";
+      size_t pending_items = msg.wheel_speeds.size();
+      for (auto item : msg.wheel_speeds) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -165,6 +197,46 @@ inline void to_block_style_yaml(
     rosidl_generator_traits::value_to_yaml(msg.bl_angle, out);
     out << "\n";
   }
+
+  // member: vx
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "vx: ";
+    rosidl_generator_traits::value_to_yaml(msg.vx, out);
+    out << "\n";
+  }
+
+  // member: vy
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "vy: ";
+    rosidl_generator_traits::value_to_yaml(msg.vy, out);
+    out << "\n";
+  }
+
+  // member: wheel_speeds
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.wheel_speeds.size() == 0) {
+      out << "wheel_speeds: []\n";
+    } else {
+      out << "wheel_speeds:\n";
+      for (auto item : msg.wheel_speeds) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const VehicleStates & msg, bool use_flow_style = false)
@@ -213,11 +285,11 @@ inline const char * name<autocar_msgs::msg::VehicleStates>()
 
 template<>
 struct has_fixed_size<autocar_msgs::msg::VehicleStates>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<autocar_msgs::msg::VehicleStates>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<autocar_msgs::msg::VehicleStates>

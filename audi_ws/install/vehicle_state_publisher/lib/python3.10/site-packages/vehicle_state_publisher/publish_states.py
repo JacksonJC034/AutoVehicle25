@@ -3,6 +3,8 @@ from rclpy.node import Node
 import tf2_ros
 import tf2_geometry_msgs
 from autocar_msgs.msg import VehicleStates
+from atuocar_msgs.msg import SlipCondition
+from autocar_msgs.msg import TireSlips
 import math
 from transforms3d.euler import quat2euler  # Use tf_transformations for conversion
 import transforms3d
@@ -19,6 +21,10 @@ class VehicleStatePublisher(Node):
         self.tf_buffer = tf2_ros.Buffer() 
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
         self.state_publisher = self.create_publisher(VehicleStates, '/vehicle_states',10)
+        # New slip detection components
+        self.slip_publisher = self.create_publisher(SlipCondition, '/slip_conditions', 10)
+        self.tire_slip_publisher = self.create_publisher(TireSlips, '/tire_slips', 10)
+        
         self.prev_fr = 0.0
         self.prev_fl = 0.0
         self.prev_br = 0.0
@@ -30,6 +36,26 @@ class VehicleStatePublisher(Node):
         self.acc_br = 0.0
         self.acc_bl = 0.0
         self.acc_theta = 0.0
+        
+        # State variables
+        self.prev_pos = np.zeros(2)
+        self.prev_time = self.get_clock().now()
+        self.prev_angles = {
+            'fr': 0.0, 'fl': 0.0, 
+            'br': 0.0, 'bl': 0.0
+        }
+        
+        self.declare_parameters(
+            namespace='',
+            parameters=[
+                ('wheel_radius', 0.3),
+                ('alpha_ref', 0.3),
+                ('k_ref', 0.2)
+            ]
+        )
+        
+        
+        self.create_timer(dt, self.publish_state)
             
 
 
@@ -49,6 +75,43 @@ class VehicleStatePublisher(Node):
         
         return accumulated_angle, prev_angle
     
+    
+    def calculate_slip(self, vehicle_states):
+        """Main slip calculation logic"""
+        # Calculate vehicle velocity
+        dt = (self.get_clock().now() - self.prev_time).nanoseconds * 1e-9
+        dx = vehicle_states.x - self.prev_pos[0]
+        dy = vehicle_states.y - self.prev_pos[1]
+        vx = dx / dt
+        vy = dy / dt
+        
+        # Calculate wheel angular velocities
+        wheel_speeds = {}
+        for wheel in ['fr', 'fl', 'br', 'bl']:
+            current_angle = getattr(vehicle_states, f'{wheel}_angle')
+            wheel_speeds[wheel] = (current_angle - self.prev_angles[wheel]) / dt
+            self.prev_angles[wheel] = current_angle
+
+        # Calculate slip ratios (longitudinal slip)
+        k = {}
+        for wheel in ['fr', 'fl', 'br', 'bl']:
+            wheel_radius = self.get_parameter('wheel_radius').value
+            longitudinal_speed = vx  # Simplified model
+            wheel_speed = wheel_radius * wheel_speeds[wheel]
+            k[wheel] = (wheel_speed - longitudinal_speed) / max(abs(longitudinal_speed), 1e-5)
+
+        # Calculate slip angles (lateral slip)
+        alpha = {}
+        beta = np.arctan2(vy, vx)  # Vehicle sideslip angle
+        for wheel in ['fr', 'fl']:
+            delta = getattr(vehicle_states, f'{wheel}_angle')
+            alpha[wheel] = delta - beta  # Simplified model for front wheels
+
+        # Store values for next iteration
+        self.prev_pos = np.array([vehicle_states.x, vehicle_states.y])
+        self.prev_time = self.get_clock().now()
+
+        return k, alpha
     
     
     def publish_state(self):
@@ -163,6 +226,23 @@ class VehicleStatePublisher(Node):
         
         
         self.state_publisher.publish(vehicle_states)
+        
+        # Now publish the slip values:
+        k, alpha = self.calculate_slip(vehicle_states)
+        
+        # Publish raw slip values
+        tire_slips = TireSlips()
+        tire_slips.header.stamp = self.get_clock().now().to_msg()
+        tire_slips.front_alpha = (alpha['fr'] + alpha['fl']) / 2.0
+        tire_slips.rear_alpha = 0.0  # Rear steering not implemented
+        tire_slips.front_k = (k['fr'] + k['fl']) / 2.0
+        tire_slips.rear_k = (k['br'] + k['bl']) / 2.0
+        self.tire_slip_publisher.publish(tire_slips)
+
+        # Publish processed slip conditions
+        slip_condition = SlipCondition()
+        # ... (populate using your slip detection logic)
+        self.slip_publisher.publish(slip_condition)
         
 
 def main(args=None):

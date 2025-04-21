@@ -21,6 +21,14 @@ module autocar_msgs {
       double br_angle;
 
       double bl_angle;
+
+      double vx;
+
+      double vy;
+
+      @verbatim (language="comment", text=
+        "[fr, fl, br, bl]")
+      sequence<double> wheel_speeds;
     };
   };
 };

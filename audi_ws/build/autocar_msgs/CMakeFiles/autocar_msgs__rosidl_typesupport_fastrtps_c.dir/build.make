@@ -81,6 +81,8 @@ rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesuppor
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/autocar_msgs/msg/State2D.idl
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/autocar_msgs/msg/Twist2D.idl
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/autocar_msgs/msg/VehicleStates.idl
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/autocar_msgs/msg/TireSlips.idl
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/autocar_msgs/msg/SlipCondition.idl
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -167,6 +169,18 @@ rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__rosidl_typ
 rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp
 
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp
+
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
@@ -223,12 +237,42 @@ CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fa
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp -o CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp.s
 
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o -MF CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o.d -o CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o -c /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp > CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.i
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp -o CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.s
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o -MF CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o.d -o CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o -c /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp > CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.i
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp -o CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.s
+
 # Object files for target autocar_msgs__rosidl_typesupport_fastrtps_c
 autocar_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp.o" \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/state2_d__type_support_c.cpp.o" \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/twist2_d__type_support_c.cpp.o" \
-"CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp.o"
+"CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp.o" \
+"CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o" \
+"CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o"
 
 # External object files for target autocar_msgs__rosidl_typesupport_fastrtps_c
 autocar_msgs__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
@@ -237,6 +281,8 @@ libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosi
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/state2_d__type_support_c.cpp.o
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/twist2_d__type_support_c.cpp.o
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__type_support_c.cpp.o
+libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp.o
+libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp.o
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/build.make
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: libautocar_msgs__rosidl_generator_c.so
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
@@ -252,7 +298,7 @@ libautocar_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuilti
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libautocar_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libautocar_msgs__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libautocar_msgs__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -265,8 +311,12 @@ CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/clean:
 
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/path2_d__type_support_c.cpp
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/slip_condition__type_support_c.cpp
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/state2_d__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/state2_d__type_support_c.cpp
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/tire_slips__type_support_c.cpp
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/twist2_d__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/twist2_d__type_support_c.cpp
 CMakeFiles/autocar_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/autocar_msgs/msg/detail/vehicle_states__rosidl_typesupport_fastrtps_c.h

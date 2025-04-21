@@ -1,0 +1,37 @@
+[0.789s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/src/vehicle_state_publisher': PYTHONPATH=/home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_state_publisher build --build-base /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build install --record /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log --single-version-externally-managed install_data
+[0.993s] running egg_info
+[0.993s] creating ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info
+[0.993s] writing ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/PKG-INFO
+[0.993s] writing dependency_links to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/dependency_links.txt
+[0.993s] writing entry points to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/entry_points.txt
+[0.993s] writing requirements to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/requires.txt
+[0.993s] writing top-level names to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/top_level.txt
+[0.993s] writing manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+[0.995s] reading manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+[0.995s] writing manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+[0.995s] running build
+[0.995s] running build_py
+[0.995s] creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build
+[0.995s] creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib
+[0.995s] creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+[0.995s] copying vehicle_state_publisher/publish_states.py -> /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+[0.995s] copying vehicle_state_publisher/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+[0.995s] running install
+[0.996s] running install_lib
+[0.996s] creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+[0.996s] copying /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/publish_states.py -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+[0.996s] copying /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+[0.997s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/publish_states.py to publish_states.cpython-310.pyc
+[0.998s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/__init__.py to __init__.cpython-310.pyc
+[0.998s] running install_data
+[0.998s] creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index
+[0.998s] creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index
+[0.998s] creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index/packages
+[0.998s] copying resource/vehicle_state_publisher -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index/packages
+[0.998s] copying package.xml -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/vehicle_state_publisher
+[0.998s] running install_egg_info
+[0.999s] Copying ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info to /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info
+[1.000s] running install_scripts
+[1.016s] Installing publish_states script to /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/vehicle_state_publisher
+[1.017s] writing list of installed files to '/home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log'
+[1.039s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/src/vehicle_state_publisher' returned '0': PYTHONPATH=/home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_state_publisher build --build-base /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build install --record /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log --single-version-externally-managed install_data

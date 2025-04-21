@@ -41,7 +41,20 @@ def yaw_damping():
     return 0
 
 def lateral_controller(R, U_x, vehicle, desired_location,x_spline,y_spline, s_lim, slip_front = 0, slip_rear = 0):
+    
+    # Original feedforward
     delta = K_ff * feedforward(R, U_x,slip_front,slip_rear)
+    
+    # Lane keeping
     delta_lk,e = lane_keep(vehicle, desired_location,x_spline,y_spline , s_lim )
-    delta = np.clip(delta + delta_lk, -MAX_STEERING_ANGLE, MAX_STEERING_ANGLE)
+    
+    # Slip compensation
+    # if vehicle.front_saturated:
+    #     delta_slip = K_SLIP * (slip_front - SLIP_THRESHOLD)
+    # else:
+    #     delta_slip = 0
+    delta_slip = 0
+    
+    total_delta = delta + delta_lk + delta_slip
+    delta = np.clip(total_delta, -MAX_STEERING_ANGLE, MAX_STEERING_ANGLE)
     return delta

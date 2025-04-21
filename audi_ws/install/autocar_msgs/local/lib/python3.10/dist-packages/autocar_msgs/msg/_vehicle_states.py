@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'wheel_speeds'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -65,6 +68,9 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
         '_fl_angle',
         '_br_angle',
         '_bl_angle',
+        '_vx',
+        '_vy',
+        '_wheel_speeds',
     ]
 
     _fields_and_field_types = {
@@ -76,6 +82,9 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
         'fl_angle': 'double',
         'br_angle': 'double',
         'bl_angle': 'double',
+        'vx': 'double',
+        'vy': 'double',
+        'wheel_speeds': 'sequence<double>',
     }
 
     SLOT_TYPES = (
@@ -87,6 +96,9 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -101,6 +113,9 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
         self.fl_angle = kwargs.get('fl_angle', float())
         self.br_angle = kwargs.get('br_angle', float())
         self.bl_angle = kwargs.get('bl_angle', float())
+        self.vx = kwargs.get('vx', float())
+        self.vy = kwargs.get('vy', float())
+        self.wheel_speeds = array.array('d', kwargs.get('wheel_speeds', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -146,6 +161,12 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
         if self.br_angle != other.br_angle:
             return False
         if self.bl_angle != other.bl_angle:
+            return False
+        if self.vx != other.vx:
+            return False
+        if self.vy != other.vy:
+            return False
+        if self.wheel_speeds != other.wheel_speeds:
             return False
         return True
 
@@ -273,3 +294,61 @@ class VehicleStates(metaclass=Metaclass_VehicleStates):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'bl_angle' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._bl_angle = value
+
+    @builtins.property
+    def vx(self):
+        """Message field 'vx'."""
+        return self._vx
+
+    @vx.setter
+    def vx(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vx' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'vx' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._vx = value
+
+    @builtins.property
+    def vy(self):
+        """Message field 'vy'."""
+        return self._vy
+
+    @vy.setter
+    def vy(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vy' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'vy' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._vy = value
+
+    @builtins.property
+    def wheel_speeds(self):
+        """Message field 'wheel_speeds'."""
+        return self._wheel_speeds
+
+    @wheel_speeds.setter
+    def wheel_speeds(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'd', \
+                "The 'wheel_speeds' array.array() must have the type code of 'd'"
+            self._wheel_speeds = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'wheel_speeds' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._wheel_speeds = array.array('d', value)

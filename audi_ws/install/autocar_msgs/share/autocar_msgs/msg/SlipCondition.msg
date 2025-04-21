@@ -1,0 +1,7 @@
+std_msgs/Header header
+bool front_saturated
+bool rear_saturated
+float64 front_delta_alpha
+float64 front_delta_k
+float64 rear_delta_alpha
+float64 rear_delta_k

@@ -48,6 +48,14 @@ cdr_serialize(
   cdr << ros_message.br_angle;
   // Member: bl_angle
   cdr << ros_message.bl_angle;
+  // Member: vx
+  cdr << ros_message.vx;
+  // Member: vy
+  cdr << ros_message.vy;
+  // Member: wheel_speeds
+  {
+    cdr << ros_message.wheel_speeds;
+  }
   return true;
 }
 
@@ -80,6 +88,17 @@ cdr_deserialize(
 
   // Member: bl_angle
   cdr >> ros_message.bl_angle;
+
+  // Member: vx
+  cdr >> ros_message.vx;
+
+  // Member: vy
+  cdr >> ros_message.vy;
+
+  // Member: wheel_speeds
+  {
+    cdr >> ros_message.wheel_speeds;
+  }
 
   return true;
 }
@@ -143,6 +162,28 @@ get_serialized_size(
   {
     size_t item_size = sizeof(ros_message.bl_angle);
     current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: vx
+  {
+    size_t item_size = sizeof(ros_message.vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: vy
+  {
+    size_t item_size = sizeof(ros_message.vy);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: wheel_speeds
+  {
+    size_t array_size = ros_message.wheel_speeds.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.wheel_speeds[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -241,6 +282,37 @@ max_serialized_size_VehicleStates(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
+  // Member: vx
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: vy
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: wheel_speeds
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -249,7 +321,7 @@ max_serialized_size_VehicleStates(
     using DataType = autocar_msgs::msg::VehicleStates;
     is_plain =
       (
-      offsetof(DataType, bl_angle) +
+      offsetof(DataType, wheel_speeds) +
       last_member_size
       ) == ret_val;
   }

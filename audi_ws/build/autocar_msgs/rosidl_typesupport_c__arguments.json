@@ -6,7 +6,9 @@
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/Path2D.idl",
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/State2D.idl",
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/Twist2D.idl",
-    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/VehicleStates.idl"
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/VehicleStates.idl",
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/TireSlips.idl",
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs:msg/SlipCondition.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -83,6 +85,8 @@
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/State2D.idl",
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/Twist2D.idl",
     "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/VehicleStates.idl",
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/TireSlips.idl",
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/SlipCondition.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

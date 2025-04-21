@@ -81,6 +81,8 @@ rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_types
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: rosidl_adapter/autocar_msgs/msg/State2D.idl
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: rosidl_adapter/autocar_msgs/msg/Twist2D.idl
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: rosidl_adapter/autocar_msgs/msg/VehicleStates.idl
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: rosidl_adapter/autocar_msgs/msg/TireSlips.idl
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: rosidl_adapter/autocar_msgs/msg/SlipCondition.idl
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -155,6 +157,12 @@ rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__rosidl_type
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c
 
@@ -166,6 +174,12 @@ rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__type_suppor
 
 rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c
+
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c
+
+rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c
 
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c.o: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c.o: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c
@@ -223,12 +237,42 @@ CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c -o CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c.s
 
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o -MF CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o.d -o CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o -c /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c > CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.i
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c -o CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.s
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o -MF CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o.d -o CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o -c /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c > CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.i
+
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c -o CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.s
+
 # Object files for target autocar_msgs__rosidl_typesupport_introspection_c
 autocar_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c.o" \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/state2_d__type_support.c.o" \
 "CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__type_support.c.o" \
-"CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c.o"
+"CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c.o" \
+"CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o" \
+"CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o"
 
 # External object files for target autocar_msgs__rosidl_typesupport_introspection_c
 autocar_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -237,6 +281,8 @@ libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs_
 libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/state2_d__type_support.c.o
 libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__type_support.c.o
 libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__type_support.c.o
+libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c.o
+libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c.o
 libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libautocar_msgs__rosidl_typesupport_introspection_c.so: libautocar_msgs__rosidl_generator_c.so
 libautocar_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
@@ -249,7 +295,7 @@ libautocar_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libb
 libautocar_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libautocar_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libautocar_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libautocar_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libautocar_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,8 +308,12 @@ CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__rosidl_typesupport_introspection_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/path2_d__type_support.c
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__rosidl_typesupport_introspection_c.h
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/slip_condition__type_support.c
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/state2_d__rosidl_typesupport_introspection_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/state2_d__type_support.c
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__rosidl_typesupport_introspection_c.h
+CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/tire_slips__type_support.c
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__rosidl_typesupport_introspection_c.h
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/twist2_d__type_support.c
 CMakeFiles/autocar_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/autocar_msgs/msg/detail/vehicle_states__rosidl_typesupport_introspection_c.h

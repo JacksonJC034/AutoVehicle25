@@ -372,6 +372,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/TireSlips.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_adapter/autocar_msgs/msg/SlipCondition.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/Path2D.msg")
 endif()
 
@@ -385,6 +393,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/VehicleStates.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/TireSlips.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_msgs/msg" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs/msg/SlipCondition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

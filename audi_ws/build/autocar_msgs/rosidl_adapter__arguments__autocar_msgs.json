@@ -4,6 +4,8 @@
     "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/Path2D.msg",
     "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/State2D.msg",
     "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/Twist2D.msg",
-    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/VehicleStates.msg"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/VehicleStates.msg",
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/TireSlips.msg",
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_msgs:msg/SlipCondition.msg"
   ]
 }

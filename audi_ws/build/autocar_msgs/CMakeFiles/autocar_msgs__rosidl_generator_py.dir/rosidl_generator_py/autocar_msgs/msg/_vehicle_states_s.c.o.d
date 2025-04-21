@@ -208,5 +208,7 @@ CMakeFiles/autocar_msgs__rosidl_generator_py.dir/rosidl_generator_py/autocar_msg
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_generator_c/autocar_msgs/msg/detail/vehicle_states__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_generator_c/autocar_msgs/msg/detail/vehicle_states__functions.h \
- /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_generator_c/autocar_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/rosidl_generator_c/autocar_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

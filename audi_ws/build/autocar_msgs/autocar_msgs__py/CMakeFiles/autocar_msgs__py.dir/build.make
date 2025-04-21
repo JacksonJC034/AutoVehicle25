@@ -73,11 +73,15 @@ autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/m
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_state2_d.py
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_twist2_d.py
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_vehicle_states.py
+autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_tire_slips.py
+autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_slip_condition.py
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/__init__.py
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_path2_d_s.c
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_state2_d_s.c
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_twist2_d_s.c
 autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_vehicle_states_s.c
+autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_tire_slips_s.c
+autocar_msgs__py/CMakeFiles/autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_slip_condition_s.c
 
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -96,6 +100,8 @@ rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/autocar_msgs/msg/State2D.idl
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/autocar_msgs/msg/Twist2D.idl
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/autocar_msgs/msg/VehicleStates.idl
+rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/autocar_msgs/msg/TireSlips.idl
+rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/autocar_msgs/msg/SlipCondition.idl
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -179,6 +185,12 @@ rosidl_generator_py/autocar_msgs/msg/_twist2_d.py: rosidl_generator_py/autocar_m
 rosidl_generator_py/autocar_msgs/msg/_vehicle_states.py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_vehicle_states.py
 
+rosidl_generator_py/autocar_msgs/msg/_tire_slips.py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_tire_slips.py
+
+rosidl_generator_py/autocar_msgs/msg/_slip_condition.py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_slip_condition.py
+
 rosidl_generator_py/autocar_msgs/msg/__init__.py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/__init__.py
 
@@ -194,6 +206,12 @@ rosidl_generator_py/autocar_msgs/msg/_twist2_d_s.c: rosidl_generator_py/autocar_
 rosidl_generator_py/autocar_msgs/msg/_vehicle_states_s.c: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_vehicle_states_s.c
 
+rosidl_generator_py/autocar_msgs/msg/_tire_slips_s.c: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_tire_slips_s.c
+
+rosidl_generator_py/autocar_msgs/msg/_slip_condition_s.c: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/autocar_msgs/msg/_slip_condition_s.c
+
 autocar_msgs__py: autocar_msgs__py/CMakeFiles/autocar_msgs__py
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_c.c
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -201,8 +219,12 @@ autocar_msgs__py: rosidl_generator_py/autocar_msgs/_autocar_msgs_s.ep.rosidl_typ
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/__init__.py
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_path2_d.py
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_path2_d_s.c
+autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_slip_condition.py
+autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_slip_condition_s.c
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_state2_d.py
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_state2_d_s.c
+autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_tire_slips.py
+autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_tire_slips_s.c
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_twist2_d.py
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_twist2_d_s.c
 autocar_msgs__py: rosidl_generator_py/autocar_msgs/msg/_vehicle_states.py

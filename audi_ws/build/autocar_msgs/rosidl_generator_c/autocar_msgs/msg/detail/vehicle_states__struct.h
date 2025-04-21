@@ -17,6 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'wheel_speeds'
+#include "rosidl_runtime_c/primitives_sequence.h"
+
 /// Struct defined in msg/VehicleStates in the package autocar_msgs.
 typedef struct autocar_msgs__msg__VehicleStates
 {
@@ -28,6 +32,10 @@ typedef struct autocar_msgs__msg__VehicleStates
   double fl_angle;
   double br_angle;
   double bl_angle;
+  double vx;
+  double vy;
+  /// [fr, fl, br, bl]
+  rosidl_runtime_c__double__Sequence wheel_speeds;
 } autocar_msgs__msg__VehicleStates;
 
 // Struct for a sequence of autocar_msgs__msg__VehicleStates.

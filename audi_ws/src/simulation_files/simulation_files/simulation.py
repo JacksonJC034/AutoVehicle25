@@ -14,6 +14,8 @@ from matplotlib.transforms import Affine2D
 import rclpy
 from rclpy.node import Node
 from autocar_msgs.msg import VehicleStates
+from autocar_msgs.msg import SlipCondition
+from autocar_msgs.msg import TireSlips
 from geometry_msgs.msg import Twist, Vector3
 from ament_index_python import get_package_share_directory
 import os
@@ -55,6 +57,11 @@ class Vehicle (Node):
     def __init__(self):
         super().__init__('vehicle')
         self.vehicle_state_listener = self.create_subscription(VehicleStates, '/vehicle_states', self.vehicle_state_callback, 10)
+        
+        # New subscription for slip conditions
+        self.slip_listener = self.create_subscription(SlipCondition, '/slip_conditions', self.slip_callback, 10)
+        self.tire_slip_listener = self.create_subscription(TireSlips, '/tire_slips', self.slip_callback, 10)
+        
         self.vehicle_message = self.create_publisher(Twist, '/autocar/cmd_vel', 10)
         self.time = 0.0
         self.x = 0.0
@@ -78,8 +85,24 @@ class Vehicle (Node):
         self.prev_bl_angle = 0.0
         self.MCP_track, self.vel_prof, self.U_x, self.A_x, self.x_cont, self.y_cont, self.roc = get_track()
         
+        # Slip control variables
+        self.front_alpha = 0.0
+        self.rear_alpha = 0.0
+        self.front_k = 0.0
+        self.rear_k = 0.0
+        self.front_saturated = False
+        self.rear_saturated = False
         
-    
+        
+    def slip_callback(self, msg):
+        """Handle slip condition updates"""
+        self.front_saturated = msg.front_saturated
+        self.rear_saturated = msg.rear_saturated
+        self.front_alpha = msg.front_alpha
+        self.rear_alpha = msg.rear_alpha
+        self.front_k = msg.front_k
+        self.rear_k = msg.rear_k
+        
     
     def vehicle_state_callback(self,msg):
         self.prev_time = self.time
@@ -106,16 +129,39 @@ class Vehicle (Node):
     
     def update(self):
         print ("speed is", self.v)
-    
-        
-        self.get_logger().info('Updating vehicle velocity.')
-        steering_input = lateral_controller(self.roc (self.s), 
-        self.U_x(self.s), self, (self.x_cont(self.s), self.y_cont(self.s)), 
-        self.x_cont, self.y_cont, (self.s-100,self.s+100), slip_front = 0, slip_rear = 0)
-        angular_vel = 0.0 #
-        throttle_input = longituinal_controller (M,self.A_x(self.s), angular_vel, self.v)
 
         
+        self.get_logger().info('Updating vehicle velocity.')
+        
+        current_v = self.v
+        desired_v = self.U_x(self.s)
+        steering_input = lateral_controller(
+            self.roc(self.s),
+            desired_v,
+            self,
+            (self.x_cont(self.s), self.y_cont(self.s)),
+            self.x_cont,
+            self.y_cont,
+            (self.s-100, self.s+100),
+            # slip_front=self.slip_front,
+            slip_front=0,
+            # slip_rear=self.slip_rear
+            slip_rear=0
+        )
+        
+        angular_vel = 0.0 #
+        throttle_input = longitudinal_controller(
+            mass=M,
+            acc=self.A_x(self.s),
+            U_x_desired=desired_v,
+            U_x_actual=current_v,
+            # alpha=self.front_alpha,
+            alpha=0,
+            # k=self.front_k
+            k=0
+        )
+
+
         cmd_vel_msg = Twist()
         # print ("length of x is", len (self.v + throttle_input/M *(self.time - self.prev_time)))
         self.v = self.v + throttle_input/M *(self.time - self.prev_time)
@@ -125,6 +171,16 @@ class Vehicle (Node):
         self.vehicle_message.publish(cmd_vel_msg)
 
 
+def apply_slip_limits(self, current_v, throttle):
+        """Adjust throttle based on slip conditions"""
+        if self.front_saturated or self.rear_saturated:
+            # Reduce throttle during slip
+            return current_v * 0.9  # Maintain 90% of current speed
+        else:
+            # Normal acceleration
+            return current_v + throttle/M * (self.time - self.prev_time)
+        
+        
 def get_track():
     # run path.py to generate my_track.csv
     package_share_dir = get_package_share_directory('racecar_controller')
@@ -144,7 +200,31 @@ def get_track():
     U_x = spline_velocity(s, vel_prof)
     A_x = U_x.derivative(1)
     
-    plt.plot (s, A_x(s))
+    # plt.plot (s, A_x(s))
+    # plt.show()
+    
+    fig, ax = plt.subplots(nrows=2, ncols=1,
+                       sharex=True,          # common distance axis
+                       figsize=(8, 6))       # tweak size as you like
+
+    # ------------------- Acceleration plot -------------------
+    ax[0].plot(s, A_x(s), label=r'$A_x(s)$')
+    ax[0].set_ylabel('Acceleration $A_x$ [m/s$^{-2}$]')
+    ax[0].set_title('Acceleration vs. Distance')
+    ax[0].legend()
+    ax[0].grid(True)
+
+    # ------------------- Velocity plot -----------------------
+    ax[1].plot(s, U_x(s), color='tab:orange', label=r'$U_x(s)$')
+    ax[1].set_xlabel('Distance $s$ [m]')
+    ax[1].set_ylabel('Velocity $U_x$ [m/s]')
+    ax[1].set_title('Velocity vs. Distance')
+    ax[1].legend()
+    ax[1].grid(True)
+
+    # --------------- Overall figure tweaks -------------------
+    fig.suptitle('Longitudinal Motion Profiles', fontsize=14)
+    fig.tight_layout()          # keeps labels from overlapping
     plt.show()
 
     # spline track  

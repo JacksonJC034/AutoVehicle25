@@ -26,6 +26,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/State2D.msg"
   "msg/Twist2D.msg"
   "msg/VehicleStates.msg"
+  "msg/TireSlips.msg"
+  "msg/SlipCondition.msg"
 DEPENDENCIES geometry_msgs std_msgs
  )
 
