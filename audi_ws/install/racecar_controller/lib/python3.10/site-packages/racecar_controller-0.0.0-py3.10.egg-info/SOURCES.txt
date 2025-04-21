@@ -20,3 +20,7 @@ simulation_files/simulation.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+track_info/MCP_track.csv
+track_info/MPC_track.csv
+track_info/s.csv
+track_info/vel_prof.csv

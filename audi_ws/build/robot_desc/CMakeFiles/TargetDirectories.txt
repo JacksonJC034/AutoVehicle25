@@ -1,9 +1,0 @@
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/uninstall.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/robot_desc_uninstall.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/test.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/edit_cache.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/rebuild_cache.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/list_install_components.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/install.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/install/local.dir
-/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/robot_desc/CMakeFiles/install/strip.dir

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches
+CMAKE_SOURCE_DIR = /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches
+CMAKE_BINARY_DIR = /home/fishros/AutoVehicle25/audi_ws/build/launches
 
 # Utility rule file for launches_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/launches_uninstall.dir/compiler_depend.make
 include CMakeFiles/launches_uninstall.dir/progress.make
 
 CMakeFiles/launches_uninstall:
-	/usr/bin/cmake -P /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 launches_uninstall: CMakeFiles/launches_uninstall
 launches_uninstall: CMakeFiles/launches_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/launches_uninstall.dir/clean:
 .PHONY : CMakeFiles/launches_uninstall.dir/clean
 
 CMakeFiles/launches_uninstall.dir/depend:
-	cd /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/CMakeFiles/launches_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fishros/AutoVehicle25/audi_ws/build/launches && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches /home/fishros/AutoVehicle25/audi_ws/build/launches /home/fishros/AutoVehicle25/audi_ws/build/launches /home/fishros/AutoVehicle25/audi_ws/build/launches/CMakeFiles/launches_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/launches_uninstall.dir/depend
 

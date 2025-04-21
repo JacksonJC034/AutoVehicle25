@@ -1,0 +1,60 @@
+[0.904s] Invoking command in '/home/fishros/AutoVehicle25/audi_ws/src/simulation_files': PYTHONPATH=/home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data
+[1.125s] running egg_info
+[1.126s] creating ../../build/racecar_controller/racecar_controller.egg-info
+[1.126s] writing ../../build/racecar_controller/racecar_controller.egg-info/PKG-INFO
+[1.126s] writing dependency_links to ../../build/racecar_controller/racecar_controller.egg-info/dependency_links.txt
+[1.126s] writing entry points to ../../build/racecar_controller/racecar_controller.egg-info/entry_points.txt
+[1.126s] writing requirements to ../../build/racecar_controller/racecar_controller.egg-info/requires.txt
+[1.126s] writing top-level names to ../../build/racecar_controller/racecar_controller.egg-info/top_level.txt
+[1.126s] writing manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.128s] reading manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.128s] writing manifest file '../../build/racecar_controller/racecar_controller.egg-info/SOURCES.txt'
+[1.128s] running build
+[1.128s] running build_py
+[1.128s] creating /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build
+[1.129s] creating /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib
+[1.129s] creating /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/constants.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/simulation.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/lateral.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/path.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/math_stuff.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.129s] copying simulation_files/get_track.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.130s] copying simulation_files/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.130s] copying simulation_files/longtitudinal.py -> /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files
+[1.130s] running install
+[1.130s] running install_lib
+[1.131s] creating /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/constants.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/simulation.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/lateral.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/path.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/math_stuff.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.131s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/get_track.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.132s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.132s] copying /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build/lib/simulation_files/longtitudinal.py -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files
+[1.132s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/constants.py to constants.cpython-310.pyc
+[1.132s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/simulation.py to simulation.cpython-310.pyc
+[1.133s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/lateral.py to lateral.cpython-310.pyc
+[1.134s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/path.py to path.cpython-310.pyc
+[1.135s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/math_stuff.py to math_stuff.cpython-310.pyc
+[1.136s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/get_track.py to get_track.cpython-310.pyc
+[1.136s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/__init__.py to __init__.cpython-310.pyc
+[1.136s] byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/simulation_files/longtitudinal.py to longtitudinal.cpython-310.pyc
+[1.136s] running install_data
+[1.137s] creating /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/ament_index
+[1.137s] creating /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/ament_index/resource_index
+[1.137s] creating /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/ament_index/resource_index/packages
+[1.137s] copying resource/racecar_controller -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/ament_index/resource_index/packages
+[1.137s] copying package.xml -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller
+[1.137s] creating /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller/track_info
+[1.137s] copying track_info/s.csv -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller/track_info
+[1.137s] copying track_info/MCP_track.csv -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller/track_info
+[1.137s] copying track_info/vel_prof.csv -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller/track_info
+[1.137s] copying track_info/MPC_track.csv -> /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/share/racecar_controller/track_info
+[1.137s] running install_egg_info
+[1.139s] Copying ../../build/racecar_controller/racecar_controller.egg-info to /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages/racecar_controller-0.0.0-py3.10.egg-info
+[1.139s] running install_scripts
+[1.156s] Installing simulation script to /home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/racecar_controller
+[1.156s] writing list of installed files to '/home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/install.log'
+[1.193s] Invoked command in '/home/fishros/AutoVehicle25/audi_ws/src/simulation_files' returned '0': PYTHONPATH=/home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fishros/AutoVehicle25/audi_ws/install/racecar_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/racecar_controller build --build-base /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/build install --record /home/fishros/AutoVehicle25/audi_ws/build/racecar_controller/install.log --single-version-externally-managed install_data

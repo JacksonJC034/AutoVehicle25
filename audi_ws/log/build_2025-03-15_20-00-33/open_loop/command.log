@@ -1,2 +1,0 @@
-Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop -- -j16 -l16
-Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) /usr/bin/cmake --build /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop -- -j16 -l16

@@ -1,8 +1,8 @@
-# Install script for directory: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches
+# Install script for directory: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/launches")
+  set(CMAKE_INSTALL_PREFIX "/home/fishros/AutoVehicle25/audi_ws/install/launches")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,15 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE DIRECTORY FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE DIRECTORY FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/launches")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/launches")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/launches")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/launches")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,42 +67,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/packages/launches")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_index/share/ament_index/resource_index/packages/launches")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches/cmake" TYPE FILE FILES
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_core/launchesConfig.cmake"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/ament_cmake_core/launchesConfig-version.cmake"
+    "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_core/launchesConfig.cmake"
+    "/home/fishros/AutoVehicle25/audi_ws/build/launches/ament_cmake_core/launchesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/launches/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/launches" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/launches/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -113,5 +113,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/launches/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fishros/AutoVehicle25/audi_ws/build/launches/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -13,7 +13,7 @@ center_line, inner_boundary, outer_boundary, waypoints = generate_race_track(
 # start the matlab engine
 eng = matlab.engine.start_matlab()
 eng.eval("set(0, 'DefaultFigureVisible', 'off');", nargout=0) # supress figures 
-eng.addpath('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/MW208_Raceline_Optimization')
+eng.addpath('/src/simulation_files/MW208_Raceline_Optimization')
 
 
 
@@ -27,11 +27,10 @@ track_name = 'my_track'
 
 # convert to numpy array 
 MCP_track = np.array(MCP_track)
-np.savetxt('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/MCP_track.csv', MCP_track, delimiter=',', fmt='%s')
-
+np.savetxt('/src/simulation_files/track_info/MCP_track.csv', MCP_track, delimiter=',', fmt='%s')
 
 vel_prof = np.array(vel_prof)
-np.savetxt('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/vel_prof.csv', vel_prof, delimiter=',', fmt='%s')
+np.savetxt('/src/simulation_files/track_info/vel_prof.csv', vel_prof, delimiter=',', fmt='%s')
 
 s = np.array (len)
-np.savetxt('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/s.csv', s, delimiter=',', fmt='%s')
+np.savetxt('/src/simulation_files/track_info/s.csv', s, delimiter=',', fmt='%s')

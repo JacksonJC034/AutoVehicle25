@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-73bcfc58d0404ceddc06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "autocar_nav",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_autocar_nav_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_autocar_nav_egg-e261ac1be5d859a3f1e6.json",
+					"name" : "ament_cmake_python_build_autocar_nav_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_autocar_nav::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_autocar_nav-9a9924deabc8b4206cdc.json",
+					"name" : "ament_cmake_python_copy_autocar_nav",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "autocar_nav_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autocar_nav_uninstall-87ff7a1adc2ecbb4292d.json",
+					"name" : "autocar_nav_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cc76eae3f7df37d78a98.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav",
+		"source" : "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

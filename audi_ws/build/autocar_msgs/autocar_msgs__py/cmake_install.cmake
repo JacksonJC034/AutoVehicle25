@@ -1,8 +1,8 @@
-# Install script for directory: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_msgs/autocar_msgs__py
+# Install script for directory: /home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/autocar_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/autocar_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/fishros/AutoVehicle25/audi_ws/install/autocar_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

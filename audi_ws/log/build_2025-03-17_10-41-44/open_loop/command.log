@@ -1,8 +1,0 @@
-Invoking command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) PS1=(AV) %(?, ,%{$fg[red]%}FAIL%{$reset_color%}
-)
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
-➜ /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/open_loop -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/open_loop
-Invoked command in '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/open_loop' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(AV) PS1=(AV) %(?, ,%{$fg[red]%}FAIL%{$reset_color%}
-)
-%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
-➜ /usr/bin/cmake /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/open_loop -DCMAKE_INSTALL_PREFIX=/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/open_loop

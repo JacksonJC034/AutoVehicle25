@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info
+writing ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/requires.txt
+writing top-level names to ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/top_level.txt
+writing manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build
+creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib
+creating /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+copying vehicle_state_publisher/publish_states.py -> /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+copying vehicle_state_publisher/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher
+running install
+running install_lib
+creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+copying /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/publish_states.py -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+copying /home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/build/lib/vehicle_state_publisher/__init__.py -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher
+byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/publish_states.py to publish_states.cpython-310.pyc
+byte-compiling /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index
+creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index
+creating /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index/packages
+copying resource/vehicle_state_publisher -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/share/vehicle_state_publisher
+running install_egg_info
+Copying ../../build/vehicle_state_publisher/vehicle_state_publisher.egg-info to /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publish_states script to /home/fishros/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/vehicle_state_publisher
+writing list of installed files to '/home/fishros/AutoVehicle25/audi_ws/build/vehicle_state_publisher/install.log'

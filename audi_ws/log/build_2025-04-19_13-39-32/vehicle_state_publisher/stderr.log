@@ -1,5 +1,0 @@
-  File "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/vehicle_state_publisher/lib/python3.10/site-packages/vehicle_state_publisher/publish_states.py", line 24
-    'base_link'
-    ^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-

@@ -13,8 +13,10 @@ import math
 from matplotlib.transforms import Affine2D
 import rclpy
 from rclpy.node import Node
-from autocar_msgs.msg import VehicleStates 
+from autocar_msgs.msg import VehicleStates
 from geometry_msgs.msg import Twist, Vector3
+from ament_index_python import get_package_share_directory
+import os
 
 # class Vehicle:
 #     def __init__(self, x=0, y=0, theta=0, v=0):
@@ -125,9 +127,16 @@ class Vehicle (Node):
 
 def get_track():
     # run path.py to generate my_track.csv
-    MCP_track = np.loadtxt ('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/MCP_track.csv', delimiter = ',')
-    vel_prof = np.loadtxt ('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/vel_prof.csv', delimiter = ',')
-    s = np.loadtxt ('/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/simulation_files/track_info/s.csv', delimiter = ',')
+    package_share_dir = get_package_share_directory('racecar_controller')
+    
+    csv_path = os.path.join(package_share_dir, 'track_info', 'MCP_track.csv')
+    MCP_track = np.loadtxt (csv_path, delimiter = ',')
+    
+    csv_path = os.path.join(package_share_dir, 'track_info', 'vel_prof.csv')
+    vel_prof = np.loadtxt (csv_path, delimiter = ',')
+    
+    csv_path = os.path.join(package_share_dir, 'track_info', 's.csv')
+    s = np.loadtxt (csv_path, delimiter = ',')
     
     # s = [item[0] for item in s]
     

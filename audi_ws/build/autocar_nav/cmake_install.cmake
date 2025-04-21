@@ -1,8 +1,8 @@
-# Install script for directory: /home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav
+# Install script for directory: /home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/autocar_nav")
+  set(CMAKE_INSTALL_PREFIX "/home/fishros/AutoVehicle25/audi_ws/install/autocar_nav")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,52 +43,52 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/pythonpath.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/pythonpath.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/autocar_nav-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_python/autocar_nav/autocar_nav.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/autocar_nav-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_python/autocar_nav/autocar_nav.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/autocar_nav" TYPE DIRECTORY FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/autocar_nav/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/autocar_nav" TYPE DIRECTORY FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/autocar_nav/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/install/autocar_nav/local/lib/python3.10/dist-packages/autocar_nav"
+        "/home/fishros/AutoVehicle25/audi_ws/install/autocar_nav/local/lib/python3.10/dist-packages/autocar_nav"
       )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE DIRECTORY FILES
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/config"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/data"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/config"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/data"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/autocar_nav" TYPE PROGRAM FILES
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/globalplanner.py"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/localisation.py"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/localplanner.py"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/clickplanner.py"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/tracker.py"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/globalplanner.py"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/localisation.py"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/localplanner.py"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/clickplanner.py"
+    "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/nodes/tracker.py"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autocar_nav")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autocar_nav")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autocar_nav")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autocar_nav")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -96,7 +96,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -104,42 +104,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/environment" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/packages/autocar_nav")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_index/share/ament_index/resource_index/packages/autocar_nav")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav/cmake" TYPE FILE FILES
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_core/autocar_navConfig.cmake"
-    "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_core/autocar_navConfig-version.cmake"
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_core/autocar_navConfig.cmake"
+    "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/ament_cmake_core/autocar_navConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autocar_nav" TYPE FILE FILES "/home/fishros/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_nav/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -150,5 +150,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/build/autocar_nav/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fishros/AutoVehicle25/audi_ws/build/autocar_nav/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

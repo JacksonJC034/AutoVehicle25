@@ -14,8 +14,8 @@ def generate_launch_description():
     descpkg = 'autocar_description'
     mappkg = 'autocar_map'
 
-    # world = os.path.join(get_package_share_directory(gzpkg), 'worlds', 'autocar.world')
-    world = '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_gazebo/worlds/autocar.world'
+    world = os.path.join(get_package_share_directory(gzpkg), 'worlds', 'autocar.world')
+    # world = '/home/dliujm/um_files/rob_498_av/AutoVehicle25/audi_ws/src/AutoCarROS2/autocar_gazebo/worlds/autocar.world'
     urdf = os.path.join(get_package_share_directory(descpkg),'urdf', 'autocar.xacro')
     rviz = os.path.join(get_package_share_directory(descpkg), 'rviz', 'view.rviz')
     

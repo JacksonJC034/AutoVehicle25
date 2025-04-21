@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "autocar_msgs__py",
+		"source" : "/home/fishros/AutoVehicle25/audi_ws/build/autocar_msgs/autocar_msgs__py"
+	}
+}
